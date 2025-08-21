@@ -1,13 +1,13 @@
 {
   rustup,
-  mkShell,
+  mkShellNoCC,
 }:
 let
   rootPath = builtins.toString ../../.;
   rustupConfig = builtins.fromTOML (builtins.readFile "${rootPath}/rust-toolchain.toml");
   rustChannel = rustupConfig.toolchain.channel or "stable";
 in
-mkShell {
+mkShellNoCC {
   packages = [
     rustup
   ];

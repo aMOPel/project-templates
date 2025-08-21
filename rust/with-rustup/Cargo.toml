@@ -1,0 +1,7 @@
+[package]
+name = "with-rustup"
+version = "0.1.0"
+edition = "2024"
+license = "unfree"
+
+[dependencies]
