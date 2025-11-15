@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+
+% ---------- LANGUAGE & FONT ----------
+\usepackage[ngerman]{babel}        % German language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% ---------- PAGE GEOMETRY ----------
+\usepackage[a4paper,margin=2.0cm]{geometry}
+
+% ---------- LINE SPACING ----------
+\usepackage{setspace}
+\singlespacing                    % 1.0 line spacing (single)
+
+% ---------- TABLE OF CONTENTS ----------
+\setcounter{tocdepth}{3}          % include up to subsections if needed
+
+% ---------- IMAGES ----------
+\usepackage{graphicx}             % for \includegraphics
+\usepackage{float}                % for placement options like [H]
+% \usepackage{wrapfig}
+\usepackage{subcaption}
+
+% ---------- BIBLIOGRAPHY ----------
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{./src/sources.bib}      % your source file
+
+% ---------- OTHER USEFUL PACKAGES ----------
+\usepackage{csquotes}             % recommended when using biblatex
+
+% ---------- BEGIN DOCUMENT ----------
+\begin{document}
+
+\title{Title}
+\author{Author}
+\date{Date}
+\maketitle
+
+\tableofcontents
+\newpage
+
+% research steps
+% 1. get an overview
+% 2. figure out what I want to talk about
+% 3. highlight quotes for those talking points, use color coding of highlights
+% 4. copy and organize those quotes in text files
+% 5. (translate) and formulate text from those quotes
+
+\section{}
+
+
+\newpage
+\printbibliography
+
+\end{document}
